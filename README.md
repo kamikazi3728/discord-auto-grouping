@@ -1,6 +1,6 @@
 <a href="https://critcola.com/?utm_source=github.com&utm_medium=readme&utm_term=logo&utm_content=discord-auto-grouping&utm_campaign=development">![Logo](https://critcola.com/assets/images/crit-cola-banner.svg)</a>
 
-# Discord Auto-grouping and User-created channels
+# Discord Auto-grouping plugin for boilerplate bot
 
 Discord Auto-grouping is a Discord bot that uses discord.js to automatically group users into "subchannels" in Discord servers, eliminating the need for creating numerous group channels. It was developed out of necessity for Crit Cola to mitigate two major pitfalls with Discord: their lack of subchannels and temporary channels.
 
