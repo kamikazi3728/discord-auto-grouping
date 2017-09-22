@@ -1,13 +1,10 @@
 <a href="https://critcola.com/?utm_source=github.com&utm_medium=readme&utm_term=logo&utm_content=discord-auto-grouping&utm_campaign=development">![Logo](https://critcola.com/assets/images/crit-cola-banner.svg)</a>
 
-# Discord Auto-grouping and User-created channels
+# Discord Auto-grouping
 
 Discord Auto-grouping is a Discord bot that uses discord.js to automatically group users into "subchannels" in Discord servers, eliminating the need for creating numerous group channels. It was developed out of necessity for Crit Cola to mitigate two major pitfalls with Discord: their lack of subchannels and temporary channels.
 
 When a user enters a channel prefixed with a game controller emoji (🎮), they'll be automatically grouped into their own "subchannel" where they can be joined by the rest of their group. When the group channel empties, it will be immediately deleted.
-
-For groups that don't have a predefined channel (let's say the server doesn't have a channel for minecraft), the user can instantiate a voice chat channel for minecraft by sending the following to the #general chat of the discord server:
-!newchannel Minecraft
 
 Crit Cola is perhaps the first community on Discord to achieve auto-grouping, and we're open-sourcing the code so that other large gaming communities can benefit from it.
 
