@@ -91,6 +91,19 @@ client.on('voiceStateUpdate', (oldMember, member) => {
 				.catch(console.error);
 		}
 	}
+	
+	//delete empty group channels
+	client.channels.array().slice(0).filter(function(channel) {
+		return channel.type == 'voice' && typeof channel.position !== 'undefined';
+	}).forEach(function(channel){
+		if (channel.name.startsWith(String.fromCodePoint('0x2501') + ' Group') && !channel.members.array().length) {
+			channel.delete()
+				.then(function() {
+					console.log('[' + new Date().toISOString() + '] Deleted ' + channel.type + ' channel "' + channel.name + '" (' + channel.id + ')');
+				})
+				.catch(console.error);
+		}
+	});
 });
 
 client.on('channelCreate', function(channel){
